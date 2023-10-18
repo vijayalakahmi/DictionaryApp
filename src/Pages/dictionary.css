@@ -1,0 +1,170 @@
+
+.main-bg{
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.content-wrapper{
+    width: 40%;
+    margin: 0px auto;
+}
+.top-section{
+    display: flex;
+    width: 100%;
+}
+.image-wrapper{
+    width: 80px;
+    height: 80px;
+}
+.image-wrapper img{
+    width: 100%;
+}
+.flex-right{
+    display: flex;
+    flex-grow: 1;
+}
+input{
+    background-color: #efefef;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    appearance: none;
+    border: none;
+
+}
+.searchbox{
+    position: relative;
+}
+.search-img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+    transform: rotate(270deg);
+}
+.search-img img{
+    border-radius: 10px;
+}
+.meaning-sect1{
+    display: flex;
+    margin-bottom: 20px;
+}
+.searchword{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.verblist{
+    display: flex;
+    flex-direction: column;
+
+}
+.Serif{
+    font-family: serif;
+}
+.Sanserif{
+    font-family: sans-serif;
+}
+.monospace{
+    font-family: monospace;
+}
+#slider{
+    display: block;
+    height: 31px;
+    width: 85px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color:#333;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    transition: 0.5s;
+}
+#slider:checked{
+    background-color:#333;
+}
+#slider::before{
+
+    content: '';
+    height: 32px;
+    width: 34px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    background-color:#fff;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#slider:checked::before{
+    left: 44px;
+    background-color:#000;
+  }
+
+  .custom-audio-player {
+    position: relative;
+  }
+  
+  input[type="checkbox"] {
+    display: none; /* Hide the actual input element */
+  }
+  
+  label.audio-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Style for the play icon */
+  label.audio-icon .play-icon {
+    display: block;
+  }
+  
+  /* Style for the pause icon */
+  label.audio-icon .pause-icon {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked + label.audio-icon .play-icon {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked + label.audio-icon .pause-icon {
+    display: block;
+  }
+  
+  /* Hide the audio element */
+  audio {
+    display: none;
+  }
+  
+  .audiosec{
+    border-radius: 30px;
+    background-color: #0000ff6b;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .color1{
+    color: #4141e86b;;
+  }
+  .color2{
+    color:#0000005e;
+  }
+  .mb{
+    margin-bottom: 10px;
+  }
+
+
+  @media (max-width: 767px) {
+
+    .content-wrapper{
+        width: 98%;
+    }
+
+  }
